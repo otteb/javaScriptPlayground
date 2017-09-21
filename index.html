@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="./reset.css"> -->
+    <!--These will be the custom styles-->
+    <link rel="stylesheet" href="./stylesheet.css">
+    <title>PlayGround.js</title>
+</head>
+<body>
+
+    <main>
+      <!-- main header -->
+      <header class="banner">
+        <div class="nav-bar">
+          <p class="nav-item"><a href="#history">About JavaScript</a></p>
+          <p class="nav-item"><a href="#projects">Projects</a></p>
+          <p class="nav-item"><a href="#creators">Creators</a></p>
+        </div>
+        <div class="main-header-title">
+          <h1 class="main-header-title-text">PlayGround.js</h1>
+        </div>
+        <div class="scroll-bar">
+          <p><a href="#history">Teach Me</a></p>
+        </div>
+      </header>
+      <!-- this is the about section -->
+      <section class="sect about-section">
+        <h2 class= "section-topic"> <a name="history">The History of JavaScript</a></h2>
+        <p class="history-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque accumsan purus sem. Integer tempus, tellus id faucibus hendrerit, neque metus eleifend quam, a ornare lorem risus in risus. Nulla placerat justo et enim maximus porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at mattis nibh. Aenean sodales sit amet tortor ac sollicitudin. Donec eget luctus sapien. Nunc non finibus libero.
+
+Nam condimentum dolor in nisi convallis malesuada. Integer pulvinar nulla eget dolor pulvinar mollis. Cras at porttitor diam, sit amet tristique ligula. Donec in luctus dui. Morbi vel fermentum est, sed varius odio. Curabitur non rutrum lacus. Aenean ac libero sit amet leo pharetra venenatis. Praesent id pharetra ipsum. Nullam finibus laoreet leo, eu tristique magna porttitor vel. Ut id neque sed lacus consequat sagittis. Nulla a pellentesque elit. Pellentesque et quam a tellus faucibus iaculis. Cras sodales augue enim, quis bibendum diam imperdiet ac. Curabitur nec orci facilisis, cursus ante in, dictum leo.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac pellentesque nunc. Aenean interdum urna mi, consectetur suscipit quam consequat ut. Curabitur eget tristique neque. Nulla sit amet gravida metus. Nam nisl felis, pulvinar ut pretium iaculis, consequat sed risus. Donec commodo hendrerit libero, iaculis pulvinar sem suscipit ac. Vestibulum in odio in nisi sollicitudin varius eu id sem. Vivamus vel mauris leo. Proin nec bibendum mauris. Sed ut porta leo.
+
+Aenean dignissim, mauris ut malesuada consequat, purus nisl varius lorem, et tincidunt arcu nulla id nisl. Curabitur consequat suscipit ligula sit amet faucibus. Curabitur at arcu ut urna posuere venenatis quis et quam. In efficitur non orci et tempor. Sed sed fermentum leo. Mauris gravida dui vel massa tempor congue. Donec rhoncus mauris ut felis dignissim, ut scelerisque purus ultricies.
+
+Nunc tellus justo, dignissim a leo at, commodo fermentum est. Donec sed scelerisque nisl. Proin tempor augue vel est bibendum semper. Morbi sit amet efficitur massa. Sed non sem non ex maximus molestie vel gravida orci. Praesent gravida vitae nisl sit amet ullamcorper. Praesent efficitur sodales nisl vitae maximus. Curabitur convallis lectus et lorem pretium, ut ultrices nibh placerat. Proin id ullamcorper velit. Mauris non diam hendrerit, finibus ligula quis, ullamcorper enim. Ut eget massa diam.</p>
+      <div class="scroll-bar">
+        <p><a href="#projects">Show Me the Projects</a></p>
+      </div>
+      </section>
+
+      <section class="sect projects-section">
+        <h2 class="section-topic"><a name="projects">JavaScript: The Projects</a></h2>
+
+          <ol class="projects-main">
+            <li class="project">
+              <h5>Turn a Roman Numeral into a Number</h5>
+              <input class="project-input" id="project1-input"></input>
+              <button type="button" class="project-button" onclick="romanToNum()">Convert</button>
+              <!-- <button type="button" onclick="checkNum()">Guess</button> -->
+              <p class="project-answer" id="project1-answer"></p>
+              <!-- <img src="smiley.gif" alt="Smiley face" height="42" width="42"> -->
+              <div class="hide-code-div">
+                <p class="hide-code"><a onclick="hideDiv1()">hide code</a></p>
+              </div>
+              <div class="code-images" id="#image1">
+                <img src="./pictures/roman_numeral_digit.png">
+              </div>
+            </li>
+
+            <!-- <li class="project"> -->
+            <li class="project">
+                <h5>Turn a Number into a Roman Numeral</h5>
+                <input class="project-input" id="project2-input"></input>
+                <button type="button" class="project-button" onclick="numToRoman()">Convert</button>
+                <!-- <button type="button" onclick="checkNum()">Guess</button> -->
+                <p class="project-answer" id="project2-answer"></p>
+                <div class="hide-code-div">
+                  <p class="hide-code"><a onclick="hideDiv2()">hide code</a></p>
+                </div>
+                <div class="code-images" id="#image2">
+                  <img src="./pictures/roman_numeral_to_string.png">
+                </div>
+            </li>
+
+            <li class="project">
+              <h5>Find the Shortest Word in a Sentence</h5>
+              <input class="project-input" id="project3-input"></input>
+              <button type="button" class="project-button" onclick="findShort()">Convert</button>
+              <!-- <button type="button" onclick="checkNum()">Guess</button> -->
+              <p class="project-answer" id="project3-answer"></p>
+              <div class="hide-code-div">
+                <p class="hide-code"><a onclick="hideDiv3()">hide code</a></p>
+              </div>
+              <div class="code-images" id="#image3">
+                <img src="./pictures/find_short.png">
+              <div>
+            </li>
+
+            <li class="project">
+              <h5>Check to see if a Number is Square</h5>
+              <input class="project-input" id="project4-input"></input>
+              <button type="button" class="project-button" onclick="isSquare()">Convert</button>
+              <!-- <button type="button" onclick="checkNum()">Guess</button> -->
+              <p class="project-answer" id="project4-answer"></p>
+              <div class="hide-code-div">
+                <p class="hide-code"><a onclick="hideDiv4()">hide code</a></p>
+              </div>
+              <div class="code-images" id="#image4">
+                <img src="./pictures/is_square.png">
+              </div>
+            </li>
+
+          </ol>
+
+        <div class="scroll-bar">
+          <p><a name="creators">Meet the Creators</a></p>
+        </div>
+      </section>
+
+      <footer>
+      </footer>
+
+
+    </main>
+</body>
+
+<script>
+//picture code:
+function hideDiv1(){
+  document.getElementById("image1").style.display = 'none';
+
+}
+function hideDiv2(){
+  document.getElementById('image2').style.display = 'none';
+
+}
+function hideDiv3(){
+  document.getElementById('image3').style.display = 'none';
+
+}
+
+function hideDiv4(){
+  document.getElementById('image4').style.display = 'none';
+
+}
+
+
+// project 1 code:
+function romanToNum(){
+  //grabs the string from the input box
+  var roman = document.getElementById('project1-input').value;
+  var result = 0;
+  var decimal = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1];
+  var romanList = ["M", "CM","D","CD","C", "XC", "L", "XL", "X","IX","V","IV","I"];
+  for (var i = 0;i<=decimal.length;i++) {
+    while (roman.indexOf(romanList[i]) === 0){
+      result += decimal[i];
+      roman = roman.replace(romanList[i],'');
+    }
+  }
+  document.getElementById('project1-answer').innerHTML = result;
+}
+
+
+//project 2 code:
+function numToRoman(){
+var number = document.getElementById('project2-input').value;
+    var s = "";
+    while (number >= 1000) {
+        s += "M";
+        number -= 1000;        }
+    while (number >= 900) {
+        s += "CM";
+        number -= 900;
+    }
+    while (number >= 500) {
+        s += "D";
+        number -= 500;
+    }
+    while (number >= 400) {
+        s += "CD";
+        number -= 400;
+    }
+    while (number >= 100) {
+        s += "C";
+        number -= 100;
+    }
+    while (number >= 90) {
+        s += "XC";
+        number -= 90;
+    }
+    while (number >= 50) {
+        s += "L";
+        number -= 50;
+    }
+    while (number >= 40) {
+        s += "XL";
+        number -= 40;
+    }
+    while (number >= 10) {
+        s += "X";
+        number -= 10;
+    }
+    while (number >= 9) {
+        s += "IX";
+        number -= 9;
+    }
+    while (number >= 5) {
+        s += "V";
+        number -= 5;
+    }
+    while (number >= 4) {
+        s += "IV";
+        number -= 4;
+    }
+    while (number >= 1) {
+        s += "I";
+        number -= 1;
+    }
+    document.getElementById('project2-answer').innerHTML = s;
+}
+
+
+
+//project3 code:
+
+function findShort(){
+  var s = document.getElementById('project3-input').value.split(' ');
+  var shortestWord = "";
+  var shortestWordLength = s[0].length;
+  for(var i = 0; i < s.length; i++)
+  {
+    if(s[i].length < shortestWordLength)
+    {
+      shortestWordLength = s[i].length;
+      shortestWord = s[i];
+    }
+  }
+  document.getElementById('project3-answer').innerHTML = shortestWord;
+}
+
+
+//project4 code:
+
+function isSquare() {
+  var n = document.getElementById('project4-input').value;
+  document.getElementById('project4-answer').innerHTML = (Math.sqrt(n) % 1 === 0);
+  // return Math.sqrt(n) % 1 === 0;
+}
+
+
+</script>
+</html>
