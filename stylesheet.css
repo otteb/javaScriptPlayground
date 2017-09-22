@@ -1,6 +1,6 @@
 main{
   width: 100vw;
-  height: 350vw;
+  height: 233vw;
 
   background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url("./pictures/main_pic.jpg");
   /*background-image:url("./pictures/main_pic.jpg");*/
@@ -49,8 +49,6 @@ img{
   flex-direction: column;
   justify-content: space-between;
 
-
-
 }
 .nav-bar{
   display: flex;
@@ -98,16 +96,17 @@ img{
 
 /*css for the projects section*/
 .projects-main{
-  margin-left: 5vw;
+  /*margin-left: 5vw;*/
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .code-images{
-  height: 400px;
-  width: 400px;
-  margin-top: 1vh;
+  height: 180px;
+  width: 550px;
+  margin-top: 3vh;
   overflow: scroll;
+  border-radius: 25px;
 }
 .hide-code-div{
   display: flex;
@@ -117,5 +116,49 @@ img{
 .hide-code{
   left: 48vw;
   display: block;
-
+}
+.main-footer{
+  width: 100vw;
+  height: 35vh;
+  background-color: #484340;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.creator{
+  width:30vw;
+  height: 30vh;
+  /*background-color: #222222;*/
+  display: flex;
+  justify-content: space-around;
+}
+.creator-name{
+  display: inline;
+  color: white;
+  font-family: monospace;
+  letter-spacing: 0.15em;
+}
+.profile-pic-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile-pic{
+  width: 150px;
+  height: 150px;
+  margin-left: 10px;
+  margin-top: 10px;
+  display: inline-block;
+}
+.profile-summary-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 3vw;;
+  padding-top: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  color: white;
+  font-family: monospace;
+  letter-spacing: 0.15em;
 }
